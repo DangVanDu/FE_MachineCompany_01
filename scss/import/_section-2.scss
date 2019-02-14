@@ -1,114 +1,114 @@
 .section-2{
-	@include margin(60px,0,0,0);
-	&__title{
-		@include flexible(flex,space-between,center);
-		@include margin(0,0,30px,0);
-		&__product{
-			@include flexible(flex,null,center);
-			h2{
-				@include font-size(18px);
-				@include margin(0,0,0,10px);
-				@include uppercase;
-				@include font-weight;
-			}
-		}
-		&__button{
-			span{
-				@include bt-slider;
-				&:hover{
-					@extend %bt-slider__hover;
-				}
-			}
+  @include margin(60px,0,0,0);
+  &__title{
+    @include flexible(flex,space-between,center);
+    @include margin(0,0,30px,0);
+    &__product{
+      @include flexible(flex,null,center);
+      h2{
+        @include font-size(18px);
+        @include margin(0,0,0,10px);
+        @include uppercase;
+        @include font-weight;
+      }
+    }s
+    &__button{
+      span{
+        @include bt-slider;
+        &:hover{
+          @extend %bt-slider__hover;
+        }
+      }
 
-		}
-	}
-	&__product{
-		box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-		@include margin(0,0,30px,0);
-		ul{
-			li{
-				@include padding(25px,0,25px,0);
-				border-bottom:1px solid $color-gray-4;
-				&:hover{
-					background-color: $color-black;
-				}
-				a{
-					color: $color-gray-4;
-					@include margin(0,0,0,20px);
-					@include font-size(13px);
-					@include flexible(flex,null,center);
-					span{
-						@include margin(0,11px,0,0,);
-					}
-					&:hover{
-						color: $color-yellow;
-					}
-				}
-			}
-		}
-	}
-	@media screen and (max-width: 767px){
-		.section-2__product{
-			display: none;
-		}
-	}
-	.mt{
-		margin-top:15px;
-	}
-	&__card{
-		@include padding(34px,40px,50px,40px);
-		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-		&__img{
-			margin-bottom: 10px;
-			@include flexible(flex,center,center);
-			height: 150px;
-		}
-		&__content{
-			p:first-child{
-				color: $color-red;
-				@include font-weight;
-				@include margin(60px,0,0,0);
-			}
-			p:nth-child(2n){
-				@include font-size(12px);
-				@include font-weight;
-				@include margin(14px,0,14px,0);
-			}
-			p{
-				@extend %center;
-				span{
-					color: $color-yellow;
-				}
-			}
-		}
-		@media screen and (max-width: 991px){
-			.section-2__card__content p{
-				font-size: 11px;
-			}
-		}
-		&__button{
-			display: none;
-			margin-top: 24px;
-			a{
-				font-size: 12px;
-				@include margin(0,5px,0,0);
-				@extend %button-product;
-				&:hover{
-					background-color: $color-yellow;
-				}
-			}
-		}
-		&:hover .section-2__card__button{
-			display: block;
-		}
-		&:hover{
-			box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-		}
-		@media screen and (max-width: 991px){
-			.section-2__card__button a{
-				font-size: 9px;
-			}
-		}
-	}
-	
+    }
+  }
+  &__product{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    @include margin(0,0,30px,0);
+    ul{
+      li{
+        @include padding(25px,0,25px,0);
+        border-bottom:1px solid $color-gray-4;
+        &:hover{
+          background-color: $color-black;
+        }
+        a{
+          color: $color-gray-4;
+          @include margin(0,0,0,20px);
+          @include font-size(13px);
+          @include flexible(flex,null,center);
+          span{
+            @include margin(0,11px,0,0,);
+          }
+          &:hover{
+            color: $color-yellow;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px){
+    .section-2__product{
+      display: none;
+    }
+  }
+  .mt{
+    margin-top:15px;
+  }
+  &__card{
+    @include padding(34px,40px,50px,40px);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    &__img{
+      margin-bottom: 10px;
+      @include flexible(flex,center,center);
+      height: 150px;
+    }
+    &__content{
+      p:first-child{
+        color: $color-red;
+        @include font-weight;
+        @include margin(60px,0,0,0);
+      }
+      p:nth-child(2n){
+        @include font-size(12px);
+        @include font-weight;
+        @include margin(14px,0,14px,0);
+      }
+      p{
+        @extend %center;
+        span{
+          color: $color-yellow;
+        }
+      }
+    }
+    @media screen and (max-width: 991px){
+      .section-2__card__content p{
+        font-size: 11px;
+      }
+    }
+    &__button{
+      display: none;
+      margin-top: 24px;
+      a{
+        font-size: 12px;
+        @include margin(0,5px,0,0);
+        @extend %button-product;
+        &:hover{
+          background-color: $color-yellow;
+        }
+      }
+    }
+    &:hover .section-2__card__button{
+      display: block;
+    }
+    &:hover{
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    }
+    @media screen and (max-width: 991px){
+      .section-2__card__button a{
+        font-size: 9px;
+      }
+    }
+  }
+  
 }

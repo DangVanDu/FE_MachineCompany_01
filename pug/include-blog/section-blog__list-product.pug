@@ -1,0 +1,11 @@
+.section-2__product
+  ul
+    li
+      a(href='#')
+        span.icon-menu
+        | DANH MỤC SẢN PHẨM
+    -var array=['Máy in phun khổ lớn','Máy hàn điện Alunima','Máy khoan Decameta','Máy phay đa năng CNC','Máy mài, tiện DC 12V','Máy khoan, cắt CNC','Máy quay thông minh N3','Motor R34C đa dụng','Máy in aser màu 3D']
+    each value in array
+      li
+        span.icon-th-large
+        a(href="#")= value

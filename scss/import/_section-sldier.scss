@@ -15,7 +15,6 @@
         letter-spacing:5px;
         @include font-size(52px);
         @extend h1;
-
       }
       li{
         @include font-size(14px);

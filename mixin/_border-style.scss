@@ -18,3 +18,9 @@
   @include padding-short(7px);
   @include border-style(1px,solid,$color-black);
 }
+
+@mixin thumbnails-img{
+  @include border-style(1px,solid,$color-gray);
+  @include border-radius-short(4px);
+  @include padding-short(5px);
+}

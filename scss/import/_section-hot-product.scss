@@ -103,8 +103,16 @@
       display: none;
       @include margin(24px,0,20px,0);
       text-align: center;
+      button{
+        font-size: 8px;
+        @include margin(0,5px,0,0);
+        @extend %button-product;
+        &:hover{
+          background-color: $color-yellow;
+        }
+      }
       a{
-        font-size: 12px;
+        font-size: 8px;
         @include margin(0,5px,0,0);
         @extend %button-product;
         &:hover{

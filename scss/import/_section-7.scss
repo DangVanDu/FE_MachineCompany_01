@@ -1,75 +1,75 @@
 .section-7{
-	@extend .section-2;
-	&__title{
-		@extend .section-2__title;
-		&__product{
-			@extend .section-2__title__product;
-		}
-		&__button{
-			@extend .section-2__title__button;
-		}
-	}
-	&__card{
-		@include flexible(flex,center,center);
-		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-		@include margin(0,0,30px,0);
-		@include padding(0,0,0,20px);
-		&__content{
-			@include margin(0,0,0,10px);
-			p{
-				color: $color-gray-5;
-				span{
-					color: $color-yellow;
-				}
-			}
-			p:first-child{
-				color: $color-black;
-				@include font-weight;
-				@include margin(30px,0,0,0);
-			}
-			p:nth-child(2n){
-				@include font-size(12px);
-				@include font-weight;
-				@include margin(14px,0,14px,0);
-			}
-			p:nth-child(3n){
-				@include font-size(12px);
-			}
-			
-			p:nth-child(4n) {
-				color: $color-red;
-				@include font-size(18px);
-				@include font-weight;
-				@include margin(14px,0,14px,0);
-			}
-		}
-		&__button{
-			@include margin(10px,0,45px,0);
-			a{
-				font-size: 12px;
-				@include margin(0,5px,0,0);
-				@extend %button-product;
-				&:hover{
-					background-color: $color-yellow;
-				}
-			}
-		}
-	}
-	@media screen and(max-width: 767px){
-		.section-7__card{
-			flex-direction: column;
-			@include padding(15px,0,0,0);
-		}
-	}
-	@media screen and(max-width: 991px){
-		.section-7__card{
-			flex-direction: column;
-			@include padding(15px,0,0,0);
-		}
-		.section-7__card__img img{
-			flex-direction: column;
-			@include padding(15px,0,0,0);
-			height: 120px;
-		}
-	}
+  @extend .section-2;
+  &__title{
+    @extend .section-2__title;
+    &__product{
+      @extend .section-2__title__product;
+    }
+    &__button{
+      @extend .section-2__title__button;
+    }
+  }
+  &__card{
+    @include flexible(flex,center,center);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    @include margin(0,0,30px,0);
+    @include padding(0,0,0,20px);
+    &__content{
+      @include margin(0,0,0,10px);
+      p{
+        color: $color-gray-5;
+        span{
+          color: $color-yellow;
+        }
+      }
+      p:first-child{
+        color: $color-black;
+        @include font-weight;
+        @include margin(30px,0,0,0);
+      }
+      p:nth-child(2n){
+        @include font-size(12px);
+        @include font-weight;
+        @include margin(14px,0,14px,0);
+      }
+      p:nth-child(3n){
+        @include font-size(12px);
+      }
+      
+      p:nth-child(4n) {
+        color: $color-red;
+        @include font-size(18px);
+        @include font-weight;
+        @include margin(14px,0,14px,0);
+      }
+    }
+    &__button{
+      @include margin(10px,0,45px,0);
+      a{
+        font-size: 12px;
+        @include margin(0,5px,0,0);
+        @extend %button-product;
+        &:hover{
+          background-color: $color-yellow;
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 767px){
+    .section-7__card{
+      flex-direction: column;
+      @include padding(15px,0,0,0);
+    }
+  }
+  @media screen and(max-width: 991px){
+    .section-7__card{
+      flex-direction: column;
+      @include padding(15px,0,0,0);
+    }
+    .section-7__card__img img{
+      flex-direction: column;
+      @include padding(15px,0,0,0);
+      height: 120px;
+    }
+  }
 }

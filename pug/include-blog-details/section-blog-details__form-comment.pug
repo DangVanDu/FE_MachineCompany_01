@@ -1,0 +1,18 @@
+.section-blog-details__form-comment
+  h2 VIẾT BÌNH LUẬN CỦA BẠN
+  .row
+    .col-sm-6.col-md-6.col-lg-6
+      form
+        label(for="hovaten") Họ và tên: 
+        span *
+        input(type="text" id="name" name="hovaten")
+    .col-sm-6.col-md-6.col-lg-6
+      form
+        label(for="email") Email:
+        span *
+        input(type="email" id="email" name="email")
+    .col-sm-12.col-md-12.col-lg-12
+      form
+        h3 Bình luận
+        textarea(rows='4' cols='50' name='comment' form='usrform')
+        a(href="#") GỬI BÌNH LUẬN

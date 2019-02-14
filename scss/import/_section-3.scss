@@ -1,57 +1,57 @@
 .section-3{
-	@extend .section-2;
-	&__title{
-		@extend .section-2__title;
-		@extend .section-2__title__product;
-		&__product{
-			@include flexible(flex,space-between,center);
-		}
-		&__right{
-			@include flexible(flex,null,null);
-		}
-		@extend .section-2__title__button;
-		&__menu{
-			@include margin(0,10px,0,10px);
-			ul{
-				@include flexible(flex,space-around,center);
-				li{
-					@include margin(0,5px,0,5px);
-					a{
-						@include padding(10px,5px,10px,5px);
-						@include border-style(1px,solid,gray);
-						color: $color-black;
-						&:hover{
-							background-color: $color-yellow;
-							color: $color-white;
-							border:none;
-						}
-					}
-				}
-			}
-		}
-		@media screen and (max-width: 767px){
-			.section-3__title__menu{
-				display: none;
-			}
-		}
-	}
-	&__card{
-		@extend .section-2__card;	
-		&__img{
-			@extend .section-2__card__img;
-			@include margin(70px,0,70px,0);
-		}
-		@extend .section-2__card__content;
-		&__button{
-			@extend .section-2__card__button;
-			text-align: center;
-		}
-		&:hover .section-3__card__button{
-			display: block;
-		}
-		&:hover{
-			box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-		}
-	}
+  @extend .section-2;
+  &__title{
+    @extend .section-2__title;
+    @extend .section-2__title__product;
+    &__product{
+      @include flexible(flex,space-between,center);
+    }
+    &__right{
+      @include flexible(flex,null,null);
+    }
+    @extend .section-2__title__button;
+    &__menu{
+      @include margin(0,10px,0,10px);
+      ul{
+        @include flexible(flex,space-around,center);
+        li{
+          @include margin(0,5px,0,5px);
+          a{
+            @include padding(10px,5px,10px,5px);
+            @include border-style(1px,solid,gray);
+            color: $color-black;
+            &:hover{
+              background-color: $color-yellow;
+              color: $color-white;
+              border:none;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 767px){
+      .section-3__title__menu{
+        display: none;
+      }
+    }
+  }
+  &__card{
+    @extend .section-2__card; 
+    &__img{
+      @extend .section-2__card__img;
+      @include margin(70px,0,70px,0);
+    }
+    @extend .section-2__card__content;
+    &__button{
+      @extend .section-2__card__button;
+      text-align: center;
+    }
+    &:hover .section-3__card__button{
+      display: block;
+    }
+    &:hover{
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    }
+  }
 }
 

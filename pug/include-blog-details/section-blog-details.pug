@@ -1,0 +1,18 @@
+section#section
+  .container
+    .section-top
+      span
+        a(href='#') Trang chủ
+      span.icon-triangle-right
+      span
+        a(href='#') Tin tức
+    .row
+      .col-sm-3.col-md-3.col-lg-3
+        include ../include-blog/section-blog__list-product
+        include ../include-blog/section-blog__list-new
+        include ../include-blog/section-blog__library-images
+        include ../include-blog/section-blog__tags
+      .col-sm-9.col-md-9.col-lg-9
+        include section-blog-details__contents
+        include section-blog-details__comments
+        include section-blog-details__form-comment

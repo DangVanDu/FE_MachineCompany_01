@@ -1,0 +1,10 @@
+.section-blog__tags
+  .section-blog__tags__title
+    span.icon-grid1
+    | TAGS
+  ul
+    -var array=['Thời trang','Máy khoan','News','Công nghệ','Xây dựng','Phay','Máy cắt','Hóa chất']
+    each value in array
+      li
+        span.icon-th-large
+        a(href="#")= value

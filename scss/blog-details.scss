@@ -1,0 +1,127 @@
+#section{
+  h2{
+    @include font-size(14px);
+    @include font-weight;
+    @include margin(0,0,40px,0);
+  }
+  .section-blog-details__contents{
+    @extend .section-blog__contents__top;
+    h3{
+      @include font-size(16px);
+      @include margin(25px,0,16px,0);
+      color: $color-black-4;
+      @include font-weight;
+    }
+    img{
+      width: 100%;
+    }
+    &__time{
+      @include flexible(flex,null,center);
+      p{
+        @include margin(0,15px,0,0);
+        @include flexible(flex,null,center);
+        color: $color-gray-4;
+        span:nth-child(2n){
+          color: $color-yellow;
+        }
+      }
+      p:first-child{
+        font-style: italic;
+      }
+    }
+    &__content{
+      p{
+        @include margin(10px,0,20px,0);
+      }
+      &__images{
+        @extend %center-2;
+        img{
+          width: 80%;
+        }
+      }
+    }
+    &__bottom{
+      .title{
+        @include font-weight;
+      }
+      @include flexible(flex,space-between,center);
+      ul{
+        li{
+          float: left;
+          a{
+            color: $color-gray-4;
+            @include italic;
+            &:hover{
+              color: $color-yellow;
+            }
+          }
+        }
+      }
+      &__links{
+        ul{
+          li{
+            @include padding(0,5px,0,0);
+            a{
+              @include padding(5px,10px,5px,10px);
+              @include border-style(1px,solid,$color-gray);
+              &:hover{
+                background-color: $color-yellow;
+                color: $color-white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-blog-details__comments{
+    @extend .section-blog__contents__top;
+    &__card{
+      @include flexible(flex,space-between,center);
+      img{
+        @include thumbnails-img;
+        @include margin(0,22px,0,0);
+        width: 102px;
+      }
+      &__nested{
+        @include margin(50px,0,50px,127px);
+      }
+      h3{
+        @include font-size(14px);
+        @include font-weight;
+      }
+      p{
+        color: $color-gray-5;
+        @include font-size(13px);
+        span{
+          @include italic;
+        }
+      }
+      p:nth-child(1n){
+        @include flexible(flex,space-between,null);
+        @include margin(5px,0,5px,0);
+        a{
+          color: $color-yellow;
+          text-decoration: underline;
+        }
+      }
+      p:last-child{
+        color: $color-gray-7;
+      }
+    }
+  }
+  .section-blog-details__form-comment{
+    @extend .section-form;
+    h3{
+      text-transform: none;
+      font-weight: 100;
+      @include font-size(16px);
+    }
+    textarea{
+      width: 100%;
+      @include margin(0,0,30px,0);
+      @include border-style(2px,solid,$color-border);
+      box-sizing:border-box;
+    }
+  }
+}
