@@ -1,0 +1,10 @@
+{
+  "products": [
+    { "id": 1, "img": "../images/product-1.png", "name": "MẤY KHOAN BLACK DECKER","price":12000,"view":"12" },
+    { "id": 2, "img": "../images/product-2.png", "name": "MẤY KHOAN BLACK DECKER","price":12000,"view":"12" },
+    { "id": 3, "img": "../images/product-3.png", "name": "MẤY KHOAN BLACK DECKER","price":12000,"view":"12" },
+    { "id": 4, "img": "../images/product-4.png", "name": " BLACK DECKER","price":12000,"view":"12" },
+    { "id": 5, "img": "../images/product-5.png", "name": "MẤY KHOAN BLACK DECKER","price":12000,"view":"12" },
+    { "id": 6, "img": "../images/product-6.png", "name": "MẤY KHOAN BLACK DECKER","price":12000,"view":"12" }
+  ] 
+}

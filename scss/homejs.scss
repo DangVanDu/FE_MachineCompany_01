@@ -1,0 +1,7 @@
+.section-2__card{
+  &__button{
+    button{
+      @extend %button;
+    }
+  }
+}

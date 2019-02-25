@@ -1,0 +1,14 @@
+.section-blog__library-images
+  .section-blog__library-images__title
+    span.icon-grid1
+    | THƯ VIỆN HÌNH ẢNH
+    
+    mixin library-images(href)
+      img(src=href)
+
+    ul
+      -var array=["../images/sc3-product-3.png","../images/product-7.png","../images/new-product.png","../images/product-1.png","../images/product-2.png","../images/sc3-product-3.png"]
+      each value in array 
+        li
+          a(href='#') 
+            +library-images(value)

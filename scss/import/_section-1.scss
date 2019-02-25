@@ -1,113 +1,113 @@
 .section-1{
-	@include margin(30px,0,0,0);
-	.section-1__slider{
-		&__content{
-			@include w-100;
-			h1{
-				color: $color-black;
-				@include font-size(22px);
-				@include font-weight;
-				@include uppercase;
-				
-			}
-			h2{
-				color: $color-yellow;
-				letter-spacing:5px;
-				@include font-size(52px);
-				@extend h1;
+  @include margin(30px,0,0,0);
+  .section-1__slider{
+    &__content{
+      @include w-100;
+      h1{
+        color: $color-black;
+        @include font-size(22px);
+        @include font-weight;
+        @include uppercase;
+        
+      }
+      h2{
+        color: $color-yellow;
+        letter-spacing:5px;
+        @include font-size(52px);
+        @extend h1;
 
-			}
-			li{
-				@include font-size(14px);
-				@include flexible(flex,null,center);
-				color:$color-black-2;
-			}
-			span{
-				color: $color-yellow;
-				@include font-size(27px);
-				@include margin(0,5px,0,0);
-			}
-			.button{
-				@include margin(32px,0,0,0);
-				a{
-					@extend %button;
-					&:hover{
-						@extend %bt-slider__hover;
-					}
-				}
-			}
-		}
-		@include padding(52px,57px,49px,48px);
-		display: flex;
-		background: $color-gray-3;
-		&__images img{
-			@include w-100;
-		}
-	}
-	.section-1__list{
-		&__1{
-			@include flexible(flex,space-between,center);
-			@include padding(16px,26px,16px,30px);
-			&:hover{
-				background-color: $color-yellow;
-				color: $color-white;
-			}
-			span{
-				color: $color-yellow;
-				@include font-size(35px);
-				&:hover{
-					color: $color-white;	
-				}
-			}
-		}
-		@media screen and (max-width: 991px){
-			.section-1__list__1{
-				padding-top:3px;
-				padding-bottom:4px;
-			}
-		}
-		&__1__content{
-			@include margin(0,0,0,30px);
-			h1{
-				@include font-size(16px);
-				@include font-weight;
-			}
-			p{
-				@include font-size(13px);
-			}
-		}
-		@media screen and (max-width: 991px){
-			&__1__content h1 {
-				@include font-size(11px);
-			}
-			p{
-				@include font-size(10px);
-			}
-		}
-		&__1 span{
-			font-size: 20px;
-		}
-	}
-	&__bt-slider{
-		@include flexible(flex,center,center);
-		a{
-			width: 8px;
-			height: 8px;
-			background-color:$color-gray-4;
-			@include margin-short(2px);
-			@include relative;
-			top:-30px;
-			&:hover{
-				background-color:$color-black;
-			}
-		}
-	}
+      }
+      li{
+        @include font-size(14px);
+        @include flexible(flex,null,center);
+        color:$color-black-2;
+      }
+      span{
+        color: $color-yellow;
+        @include font-size(27px);
+        @include margin(0,5px,0,0);
+      }
+      .button{
+        @include margin(32px,0,0,0);
+        a{
+          @extend %button;
+          &:hover{
+            @extend %bt-slider__hover;
+          }
+        }
+      }
+    }
+    @include padding(52px,57px,49px,48px);
+    display: flex;
+    background: $color-gray-3;
+    &__images img{
+      @include w-100;
+    }
+  }
+  .section-1__list{
+    &__1{
+      @include flexible(flex,space-between,center);
+      @include padding(16px,26px,16px,30px);
+      &:hover{
+        background-color: $color-yellow;
+        color: $color-white;
+      }
+      span{
+        color: $color-yellow;
+        @include font-size(35px);
+        &:hover{
+          color: $color-white;  
+        }
+      }
+    }
+    @media screen and (max-width: 991px){
+      .section-1__list__1{
+        padding-top:3px;
+        padding-bottom:4px;
+      }
+    }
+    &__1__content{
+      @include margin(0,0,0,30px);
+      h1{
+        @include font-size(16px);
+        @include font-weight;
+      }
+      p{
+        @include font-size(13px);
+      }
+    }
+    @media screen and (max-width: 991px){
+      &__1__content h1 {
+        @include font-size(11px);
+      }
+      p{
+        @include font-size(10px);
+      }
+    }
+    &__1 span{
+      font-size: 20px;
+    }
+  }
+  &__bt-slider{
+    @include flexible(flex,center,center);
+    a{
+      width: 8px;
+      height: 8px;
+      background-color:$color-gray-4;
+      @include margin-short(2px);
+      @include relative;
+      top:-30px;
+      &:hover{
+        background-color:$color-black;
+      }
+    }
+  }
 }
 @media (min-width: 992px){
-	.section-1 .col-lg-8 {
-		padding-right:0;
-	}
-	.section-1 .col-lg-4 {
-		padding-left:0;
-	}
+  .section-1 .col-lg-8 {
+    padding-right:0;
+  }
+  .section-1 .col-lg-4 {
+    padding-left:0;
+  }
 }

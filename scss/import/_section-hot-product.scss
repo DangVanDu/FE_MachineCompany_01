@@ -104,7 +104,7 @@
       @include margin(24px,0,20px,0);
       text-align: center;
       a{
-        font-size: 12px;
+        font-size: 8px;
         @include margin(0,5px,0,0);
         @extend %button-product;
         &:hover{

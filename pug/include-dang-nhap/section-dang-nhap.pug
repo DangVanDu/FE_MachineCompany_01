@@ -1,0 +1,30 @@
+section#section
+  .container
+    .section-top
+      span
+        a(href='#') Trang chủ
+      span.icon-triangle-right
+      span
+        a(href='#') Đăng nhập
+    .section-form
+      .row
+        .col-sm-6.col-md-6.col-lg-6
+          h3 Thông tin đăng nhập
+          form
+            label(for="hovaten") Họ và tên: 
+            span *
+            input(type="text" id="name" name="hovaten")
+            label(for="email") Email:
+            span *
+            input(type="email" id="email" name="email")
+          .section-form__checkbox
+            form
+              input(type="checkbox") 
+              | Ghi nhớ đăng nhập
+            p Bạn quên mập khẩu ?
+          a(href="#") Đăng nhập
+        .col-sm-6.col-md-6.col-lg-6
+          .section-form__content
+            h3 Bạn chưa có tài khoản ?
+            p Đăng ký tài khoản để mua hàng nhanh hơn. Theo dõi đơn đặt hàng, vận chuyển. Cập nhật các tin tức sự kiện và các chương trình giảm giá của chúng tôi.
+            a(href="#") Đăng kí

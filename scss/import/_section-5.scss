@@ -1,32 +1,32 @@
 .section-5{
-	@extend .section-3;
-	&__title{
-		@extend .section-3__title;
-		&__product{
-			@extend .section-3__title__product;
-		}
-		&__right{
-			@include flexible(flex,null,null);
-		}
-		&__menu{
-			@extend .section-3__title__menu;
-		}
-	}
-	.mt{
-		margin-top:15px;
-	}
-	&__card{
-		@extend .section-3__card;
-		&__img{
-			@extend .section-3__card__img;
-			@include margin(50px,0,50px,0);
-		}
-		&__img-2{
-			@include margin(275px,0,288px,0);
-		}
-		&__button{
-			@extend .section-3__card__button;
-		}
+  @extend .section-3;
+  &__title{
+    @extend .section-3__title;
+    &__product{
+      @extend .section-3__title__product;
+    }
+    &__right{
+      @include flexible(flex,null,null);
+    }
+    &__menu{
+      @extend .section-3__title__menu;
+    }
+  }
+  .mt{
+    margin-top:15px;
+  }
+  &__card{
+    @extend .section-3__card;
+    &__img{
+      @extend .section-3__card__img;
+      @include margin(50px,0,50px,0);
+    }
+    &__img-2{
+      @include margin(275px,0,288px,0);
+    }
+    &__button{
+      @extend .section-3__card__button;
+    }
 
-	}
+  }
 }
